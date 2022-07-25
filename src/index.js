@@ -1,14 +1,18 @@
+// changed code in React boilerplate template from stackoverflow article to get it to work
+// https://stackoverflow.com/questions/46566830/how-to-use-create-react-app-with-an-older-react-version/72241476#72241476
+
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+
+ReactDOM.render(
   <React.StrictMode>
     <App />
-  </React.StrictMode>
+  </React.StrictMode>,
+  document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function
